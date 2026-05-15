@@ -3,56 +3,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Auris Prototype</title>
+  <title>AURIS Prototype</title>
 
   <style>
-    body{
+    *{
       margin:0;
-      font-family:Arial;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:Arial, sans-serif;
       background:#0f0f0f;
       color:white;
     }
 
     .container{
       width:90%;
+      max-width:1400px;
       margin:auto;
       padding:40px 0;
     }
 
     h1{
       font-size:42px;
-      margin-bottom:20px;
+      margin-bottom:25px;
+      font-weight:700;
     }
 
     .section{
-      margin-bottom:60px;
+      margin-bottom:70px;
     }
 
     iframe{
       width:100%;
       border:none;
-      border-radius:16px;
+      border-radius:18px;
+      background:#1a1a1a;
     }
 
     .prototype{
-      height:700px;
+      height:750px;
     }
 
     .pdf{
-      height:800px;
+      height:900px;
+    }
+
+    @media (max-width:768px){
+
+      h1{
+        font-size:28px;
+      }
+
+      .prototype{
+        height:500px;
+      }
+
+      .pdf{
+        height:600px;
+      }
+
     }
   </style>
 </head>
+
 <body>
 
   <div class="container">
 
+    <!-- FIGMA PROTOTYPE -->
     <div class="section">
       <h1>AURIS Prototype</h1>
 
-      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/qF6G5tOXSQwRBUImx054CY/AURIS?node-id=39-1316&embed-host=share" allowfullscreen></iframe>
+      <iframe
+        class="prototype"
+        src="https://embed.figma.com/design/qF6G5tOXSQwRBUImx054CY/AURIS?node-id=39-1316&embed-host=share"
+        allowfullscreen>
+      </iframe>
     </div>
 
+    <!-- PDF SECTION -->
     <div class="section">
       <h1>Project PDF</h1>
 
